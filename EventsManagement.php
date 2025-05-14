@@ -193,7 +193,7 @@ class Events {
 
     public function myEvents(){
         try {
-            $smsContent = "Your Ikaze Shop Cart:\n";
+            $smsContent = "your Smartevents:\n";
             // Use phoneNumber to get the user_id
             $stmtUser = $this->pdo->prepare("SELECT userid, fullname FROM users WHERE phoneNumber = ?");
             $stmtUser->execute([$this->phoneNumber]);
